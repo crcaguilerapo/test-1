@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: franquicia
+
+database:
+  url: "jdbc:mysql://localhost:3306/db"
+  user: "app"
+  password: "app_password"
