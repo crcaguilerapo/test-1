@@ -19,7 +19,7 @@ Para ejecutar la base de datos en Docker y la aplicación en local, sigue estos 
 1. Ubícate en la raíz del proyecto.
 2. Ejecuta el siguiente comando para iniciar la base de datos dockerizada:
    ```sh
-   docker-compose -f mi-docker-compose.local.yml up
+   docker-compose -f docker-compose.local.yml up
 3. Inicia la aplicación con el profile local:
    ```sh
    --spring.profiles.active=local
