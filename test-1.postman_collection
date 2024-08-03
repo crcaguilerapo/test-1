@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "6484c45b-71c4-4e8b-8175-117ee857c0ba",
+		"name": "Nequi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37365728"
+	},
+	"item": [
+		{
+			"name": "Create franchise",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"Cristian\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/franchise",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"franchise"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update franchise",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"Zuza1\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/franchise",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"franchise"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create branch",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"Cristian\",\r\n    \"fk_franchise\": \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/branch",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"branch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getMaxStockProductsByBranch",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "create product",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Update product",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/product",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
